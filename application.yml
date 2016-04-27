@@ -30,7 +30,7 @@ eureka:
     metadataMap:
       instanceId: ${vcap.application.instance_id}
       
-#---  # <--- ADD NEW DOCUMENT
+---  # <--- ADD NEW DOCUMENT
 
 spring:
   profiles: dev
