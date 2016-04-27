@@ -32,8 +32,8 @@ eureka:
       
 #---  # <--- ADD NEW DOCUMENT
 
-#spring:
-#  profiles: dev
+spring:
+  profiles: dev
 eureka:
   client:    
     serviceUrl:
