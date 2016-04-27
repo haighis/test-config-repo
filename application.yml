@@ -30,10 +30,10 @@ eureka:
     metadataMap:
       instanceId: ${vcap.application.instance_id}
       
----  # <--- ADD NEW DOCUMENT
+#---  # <--- ADD NEW DOCUMENT
 
-spring:
-  profiles: dev
+#spring:
+#  profiles: dev
 eureka:
   client:    
     serviceUrl:
