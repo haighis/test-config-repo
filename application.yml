@@ -1,15 +1,20 @@
-security:
-  basic:
-    enabled: false
+#security:
+#  basic:
+#    enabled: false
 
-management:
-  security:
-    enabled: false
+#management:
+#  security:
+#    enabled: false
 
 logging:
   level:
     io:
       pivotal: DEBUG
 
-ribbon: # <---NEW SECTION
-  IsSecure: false
+#ribbon: # <---NEW SECTION
+#  IsSecure: false
+  
+eureka: # <--- ADD NEW SECTION
+  instance:
+    metadataMap:
+      instanceId: ${spring.application.name}:${server.port:8080}
