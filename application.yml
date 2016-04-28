@@ -23,4 +23,4 @@ spring:
 eureka:
   client:    
     serviceUrl:
-      defaultZone: http://service-registry.local.pcfdev.io/eureka/
+      defaultZone: http://config-server-peatier-pall.cfapps.io/eureka/
