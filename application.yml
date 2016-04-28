@@ -1,3 +1,4 @@
+# Common values for all micro services.
 logging:
   level:
     io:
@@ -16,7 +17,7 @@ eureka:
     nonSecurePort: 80
     metadataMap:
       instanceId: ${vcap.application.instance_id}
-  client:    
+  client:    # This will define the Eureka Discovery uri for all micro services cf set-env product-service (set for all ms) DISCOVERY_URL service-registry-penecontemporaneous-urgency.local.pcfdev.io
     serviceUrl:
       defaultZone: http://${DISCOVERY_URL:http://127.0.0.1:8761}/eureka/
 
