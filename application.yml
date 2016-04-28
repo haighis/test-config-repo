@@ -1,24 +1,12 @@
-#security:
-#  basic:
-#    enabled: false
-
-#management:
-#  security:
-#    enabled: false
-
 logging:
   level:
     io:
       pivotal: DEBUG
-
-#ribbon: # <---NEW SECTION
-#  IsSecure: false
-  
-eureka: # <--- ADD NEW SECTION
+eureka:
   instance:
     metadataMap:
       instanceId: ${spring.application.name}:${server.port:8080}
-      
+
 --- # <--- ADD NEW DOCUMENT
 
 spring:
@@ -29,12 +17,3 @@ eureka:
     nonSecurePort: 80
     metadataMap:
       instanceId: ${vcap.application.instance_id}
-      
----  # <--- ADD NEW DOCUMENT
-
-#spring:
-#  profiles: dev
-#eureka:
-#  client:    
-#    serviceUrl:
-#      defaultZone: http://service-registry-preflagellated-dobie.local.pcfdev.io/eureka/ # <-- substitute your service-registry url
