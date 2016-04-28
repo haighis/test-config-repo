@@ -32,9 +32,9 @@ eureka:
       
 ---  # <--- ADD NEW DOCUMENT
 
-spring:
-  profiles: dev
-eureka:
-  client:    
-    serviceUrl:
-      defaultZone: http://service-registry-preflagellated-dobie.local.pcfdev.io/eureka/ # <-- substitute your service-registry url
+#spring:
+#  profiles: dev
+#eureka:
+#  client:    
+#    serviceUrl:
+#      defaultZone: http://service-registry-preflagellated-dobie.local.pcfdev.io/eureka/ # <-- substitute your service-registry url
