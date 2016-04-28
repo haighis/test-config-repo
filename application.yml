@@ -8,7 +8,6 @@ eureka:
       instanceId: ${spring.application.name}:${server.port:8080}
 
 ---
-
 spring:
   profiles: cloud
 eureka:
@@ -17,6 +16,9 @@ eureka:
     nonSecurePort: 80
     metadataMap:
       instanceId: ${vcap.application.instance_id}
+  client:    
+    serviceUrl:
+      defaultZone: http://${DISCOVERY_URL:http://127.0.0.1:8761}/eureka/
 
 #---  # <--- ADD NEW DOCUMENT
 
