@@ -25,7 +25,7 @@ spring:
 eureka:
   client:    
     serviceUrl:
-      defaultZone: http://service-registry-worrisome-counsellor.cfapps.io/eureka/ # <-- substitute your service-registry url
+      defaultZone: http://service-registry-oversure-unsophistication.cfapps.io/eureka/ # <-- substitute your service-registry url
       
       
       
